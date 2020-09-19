@@ -10,32 +10,44 @@
         android:id="@+id/txtViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/txt_view_title"
+        android:textAlignment="center"
         android:textColor="#090808"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtViewHint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        tools:layout_editor_absoluteX="24dp" />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/btnStartRating"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:text="@string/string_start"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewHint"
-        tools:layout_editor_absoluteX="1dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewHint" />
 
     <TextView
         android:id="@+id/txtViewHint"
         android:layout_width="wrap_content"
         android:layout_height="18dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginEnd="113dp"
         android:text="@string/txt_ciew_hint"
+        android:textAlignment="center"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/btnStartRating"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewTitle"
-        tools:layout_editor_absoluteX="112dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
