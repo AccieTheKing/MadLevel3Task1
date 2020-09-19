@@ -7,22 +7,35 @@
     tools:context=".StartFragment">
 
     <TextView
-        android:id="@+id/textview_first"
+        android:id="@+id/txtViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_first_fragment"
-        app:layout_constraintBottom_toTopOf="@id/button_first"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/txt_view_title"
+        android:textColor="#090808"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewHint"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_editor_absoluteX="24dp" />
 
     <Button
-        android:id="@+id/button_first"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnStartRating"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:text="@string/next"
+        android:text="@string/string_start"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+        app:layout_constraintTop_toBottomOf="@+id/txtViewHint"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:id="@+id/txtViewHint"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:text="@string/txt_ciew_hint"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStartRating"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewTitle"
+        tools:layout_editor_absoluteX="112dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

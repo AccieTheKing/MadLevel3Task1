@@ -9,4 +9,7 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="txt_view_title">Welcome to the Games Rating app</string>
+    <string name="txt_ciew_hint">Click START to start rating XD</string>
+    <string name="string_start">START</string>
 </resources>
