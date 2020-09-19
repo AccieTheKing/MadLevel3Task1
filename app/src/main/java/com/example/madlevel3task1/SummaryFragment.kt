@@ -7,6 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 
 
+// these two constants are going to be used to indicate which data will be sent
+const val ARG_GAME_NAME = "arg_game_name"
+const val ARG_GAME_RATING = "arg_game_rating"
+
 class SummaryFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
