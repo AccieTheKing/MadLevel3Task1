@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_rating.*
 
 /**
@@ -22,7 +23,23 @@ class RatingFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        btn_go_to_sommuray.setOnClickListener {
+            navigateToSummary()
+        }
+
         showRandomAssessableGame()
+    }
+
+    private fun navigateToSummary() {
+        val args = Bundle() // creating a new bundle
+        // putting the game rating inside a bundle
+        args.putFloat(ARG_GAME_RATING, rb_game.rating)
+        // putting the random game title inside the bundle
+        args.putString(ARG_GAME_NAME, txtViewGameTitle.text.toString())
+
+        // going to summary fragment with the bundle data as parameter
+        findNavController().navigate(R.id.action_ratingFragment_to_summaryFragment, args)
     }
 
     private fun showRandomAssessableGame() {

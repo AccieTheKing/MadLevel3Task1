@@ -7,7 +7,7 @@
     tools:context=".RatingFragment">
 
     <RatingBar
-        android:id="@+id/ratingBar"
+        android:id="@+id/rb_game"
         android:layout_width="240dp"
         android:layout_height="64dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_go_to_sommuray"
@@ -37,7 +37,7 @@
         android:layout_height="36dp"
         android:text="TextView"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+        app:layout_constraintBottom_toTopOf="@+id/rb_game"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,6 +51,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+        app:layout_constraintTop_toBottomOf="@+id/rb_game" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
