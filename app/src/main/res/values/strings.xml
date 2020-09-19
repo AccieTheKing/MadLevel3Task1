@@ -12,4 +12,6 @@
     <string name="txt_view_title">Welcome to the Games Rating app</string>
     <string name="txt_ciew_hint">Click START to start rating XD</string>
     <string name="string_start">START</string>
+    <string name="sting_to_summary">TO SUMMARY</string>
+    <string name="fragment_title_rating">Rate the following game from 1 to 5 stars!</string>
 </resources>

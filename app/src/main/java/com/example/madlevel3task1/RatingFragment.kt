@@ -23,4 +23,6 @@ class RatingFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
     }
+
+    
 }
